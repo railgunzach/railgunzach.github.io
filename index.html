@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Railgun Games</title>
+    <style>
+        /* Basic CSS styling */
+        body {
+            font-family: 'Viga', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #00000f 0%, #00000f 87%, #720a8d 100%); /* Updated background gradient */
+            color: #fff; /* Set text color to white */
+            position: relative; /* Added to ensure proper positioning */
+        }
+
+        header {
+            text-align: center;
+            position: relative; /* Added to ensure proper positioning */
+        }
+
+        header img.hero-image {
+            width: 100%; /* Adjust this to your image's aspect ratio */
+            display: block;
+            z-index: -1; /* Push the image behind other content */
+        }
+
+        .logo img {
+            width: 18%; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            position: fixed; /* Position the original logo fixed */
+            top: 20px;
+            left: 20px;
+            z-index: 1000; /* Place the logo above other elements */
+        }
+
+        /* Adjust the video styling */
+        .video-container {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+
+        .video-container iframe {
+            width: 756px; /* Increased by 50%, then decreased by 10% */
+            height: 425.7px; /* Increased by 50%, then decreased by 10% */
+        }
+
+        /* Ensure the content is positioned below the header image */
+        .header-content {
+            position: relative;
+            z-index: 1000;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 40px; /* Adjust as needed */
+        }
+
+        .image-container img {
+            width: 550px; /* Increased by 50% */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        h1 {
+            margin-bottom: 10px; /* Add space below the h1 element */
+        }
+    </style>
+
+    <!-- Add Google Fonts link for Viga font -->
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="video-container">
+            <!-- YouTube video on top of the header image -->
+            <iframe width="630" height="354.75" src="https://www.youtube.com/embed/3VdAzK6VThE" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <img src="D:\zfrie\Documents\starfallbackground.png" alt="Hero Image" class="hero-image">
+        <div class="header-content">
+            <div class="logo">
+                <img src="C:\Users\zfrie\OneDrive\Documents\railgungameslogo.png" alt="RailGun Games Logo" width="20%">
+            </div>
+        </div>
+
+        <!-- Image container below the header image -->
+        <div class="image-container">
+            <img src="D:\zfrie\Documents\starfalllogo.png" alt="Starfall Logo">
+        </div>
+
+        <h1>Coming 2025</h1>
+    </header>
+
+    <main>
+        <!-- Add sections for other content -->
+    </main>
+
+    <footer>
+        <p style="margin-left: 20px;">&copy; 2024 Railgun Games</p>
+    </footer>
+</body>
+</html>
